@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		7BC302812A9CE1940023ABFC /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC302802A9CE1940023ABFC /* ToDoListApp.swift */; };
-		7BC302832A9CE1940023ABFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC302822A9CE1940023ABFC /* ContentView.swift */; };
+		7BC302832A9CE1940023ABFC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC302822A9CE1940023ABFC /* MainView.swift */; };
 		7BC302852A9CE1960023ABFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC302842A9CE1960023ABFC /* Assets.xcassets */; };
 		7BC302882A9CE1960023ABFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC302872A9CE1960023ABFC /* Preview Assets.xcassets */; };
 		7BC3028F2A9CE3340023ABFC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BC3028E2A9CE3340023ABFC /* GoogleService-Info.plist */; };
 		7BC302922A9CE4030023ABFC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7BC302912A9CE4030023ABFC /* FirebaseAuth */; };
 		7BC302942A9CE4030023ABFC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7BC302932A9CE4030023ABFC /* FirebaseFirestore */; };
 		7BC302962A9CE4030023ABFC /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7BC302952A9CE4030023ABFC /* FirebaseFirestoreSwift */; };
+		7BC3029C2A9CE7260023ABFC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3029B2A9CE7260023ABFC /* ProfileView.swift */; };
+		7BC3029E2A9CE7330023ABFC /* ToDoListItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3029D2A9CE7330023ABFC /* ToDoListItems.swift */; };
+		7BC302A02A9CE73D0023ABFC /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3029F2A9CE73D0023ABFC /* NewItemView.swift */; };
+		7BC302A22A9CE7490023ABFC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC302A12A9CE7490023ABFC /* LoginView.swift */; };
+		7BC302A42A9CE74E0023ABFC /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC302A32A9CE74E0023ABFC /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7BC3027D2A9CE1940023ABFC /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC302802A9CE1940023ABFC /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
-		7BC302822A9CE1940023ABFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7BC302822A9CE1940023ABFC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7BC302842A9CE1960023ABFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BC302872A9CE1960023ABFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7BC3028E2A9CE3340023ABFC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7BC3029B2A9CE7260023ABFC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7BC3029D2A9CE7330023ABFC /* ToDoListItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItems.swift; sourceTree = "<group>"; };
+		7BC3029F2A9CE73D0023ABFC /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
+		7BC302A12A9CE7490023ABFC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7BC302A32A9CE74E0023ABFC /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +69,10 @@
 		7BC3027F2A9CE1940023ABFC /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
-				7BC302802A9CE1940023ABFC /* ToDoListApp.swift */,
-				7BC302822A9CE1940023ABFC /* ContentView.swift */,
-				7BC302842A9CE1960023ABFC /* Assets.xcassets */,
-				7BC3028E2A9CE3340023ABFC /* GoogleService-Info.plist */,
+				7BC3029A2A9CE62B0023ABFC /* Other */,
+				7BC302992A9CE6160023ABFC /* Models */,
+				7BC302982A9CE60A0023ABFC /* ViewModels */,
+				7BC302972A9CE6020023ABFC /* Views */,
 				7BC302862A9CE1960023ABFC /* Preview Content */,
 			);
 			path = ToDoList;
@@ -74,6 +84,43 @@
 				7BC302872A9CE1960023ABFC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7BC302972A9CE6020023ABFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7BC302822A9CE1940023ABFC /* MainView.swift */,
+				7BC3029B2A9CE7260023ABFC /* ProfileView.swift */,
+				7BC3029D2A9CE7330023ABFC /* ToDoListItems.swift */,
+				7BC3029F2A9CE73D0023ABFC /* NewItemView.swift */,
+				7BC302A12A9CE7490023ABFC /* LoginView.swift */,
+				7BC302A32A9CE74E0023ABFC /* RegisterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7BC302982A9CE60A0023ABFC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7BC302992A9CE6160023ABFC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7BC3029A2A9CE62B0023ABFC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				7BC302802A9CE1940023ABFC /* ToDoListApp.swift */,
+				7BC302842A9CE1960023ABFC /* Assets.xcassets */,
+				7BC3028E2A9CE3340023ABFC /* GoogleService-Info.plist */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,8 +202,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BC302832A9CE1940023ABFC /* ContentView.swift in Sources */,
+				7BC302A22A9CE7490023ABFC /* LoginView.swift in Sources */,
+				7BC302832A9CE1940023ABFC /* MainView.swift in Sources */,
+				7BC3029C2A9CE7260023ABFC /* ProfileView.swift in Sources */,
+				7BC302A42A9CE74E0023ABFC /* RegisterView.swift in Sources */,
+				7BC3029E2A9CE7330023ABFC /* ToDoListItems.swift in Sources */,
 				7BC302812A9CE1940023ABFC /* ToDoListApp.swift in Sources */,
+				7BC302A02A9CE73D0023ABFC /* NewItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
