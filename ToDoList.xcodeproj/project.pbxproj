@@ -31,6 +31,7 @@
 		7BC302B62A9CE7F20023ABFC /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC302B52A9CE7F20023ABFC /* RegisterViewViewModel.swift */; };
 		7BC302B82A9CE7FC0023ABFC /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC302B72A9CE7FC0023ABFC /* ToDoListItemViewViewModel.swift */; };
 		7BC302BA2A9CEAB60023ABFC /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC302B92A9CEAB60023ABFC /* HeaderView.swift */; };
+		7BC302BE2A9E32BB0023ABFC /* TLButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC302BD2A9E32BB0023ABFC /* TLButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		7BC302B52A9CE7F20023ABFC /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		7BC302B72A9CE7FC0023ABFC /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewViewModel.swift; sourceTree = "<group>"; };
 		7BC302B92A9CEAB60023ABFC /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		7BC302BD2A9E32BB0023ABFC /* TLButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				7BC302A32A9CE74E0023ABFC /* RegisterView.swift */,
 				7BC302A52A9CE7790023ABFC /* ToDoListItemView.swift */,
 				7BC302B92A9CEAB60023ABFC /* HeaderView.swift */,
+				7BC302BD2A9E32BB0023ABFC /* TLButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				7BC302B62A9CE7F20023ABFC /* RegisterViewViewModel.swift in Sources */,
 				7BC302AC2A9CE7C40023ABFC /* MainViewViewModel.swift in Sources */,
 				7BC3029C2A9CE7260023ABFC /* ProfileView.swift in Sources */,
+				7BC302BE2A9E32BB0023ABFC /* TLButtonView.swift in Sources */,
 				7BC302A42A9CE74E0023ABFC /* RegisterView.swift in Sources */,
 				7BC302AE2A9CE7CD0023ABFC /* ProfileViewViewModel.swift in Sources */,
 				7BC3029E2A9CE7330023ABFC /* ToDoListView.swift in Sources */,
