@@ -10,5 +10,8 @@ import Foundation
 // view model for entire todo list
 class ToDoListViewViewModel: ObservableObject {
 	
+	@Published var showingNewItemView: Bool = false
+	
 	init(){}
+	
 }
