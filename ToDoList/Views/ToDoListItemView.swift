@@ -14,30 +14,42 @@ struct ToDoListItemView: View {
 	
 	
 	var body: some View {
-        
 		HStack{
-			VStack(alignment: .leading){
-				Text(item.title)
-					.bold()
-					.font(.body)
-				Text("\(Date(timeIntervalSince1970: item.dueDate).formatted(date:.abbreviated, time: .shortened))")
-					.font(.footnote)
-					.foregroundColor(Color(.secondaryLabel))
-				
-			}
-			
+			Info
 			Spacer()
-			
-			Button{
-				viewModel.toggleIsDone(item:item)
-			} label:{
-				Image(systemName:item.isDone ? "checkmark.circle.fill" : "circle")
-					.foregroundColor(Color.primary)
-					.scaledToFill()
-			}
+			CompleteButton
 		}
     }
+	
+	@ViewBuilder
+	/// Contains the title and date of the item
+	var Info: some View{
+		VStack(alignment: .leading){
+			Text(item.title)
+				.bold()
+				.font(.body)
+			Text("\(Date(timeIntervalSince1970: item.dueDate).formatted(date:.abbreviated, time: .shortened))")
+				.font(.footnote)
+				.foregroundColor(Color(.secondaryLabel))
+			
+		}
+	}
+	
+	@ViewBuilder
+	/// Completion button
+	var CompleteButton: some View {
+		Button{
+			viewModel.toggleIsDone(item:item)
+		} label:{
+			Image(systemName:item.isDone ? "checkmark.circle.fill" : "circle")
+				.foregroundColor(Color.blue)
+				.scaledToFill()
+		}
+	}
 }
+
+
+
 
 struct ToDoListItemView_Previews: PreviewProvider {
     static var previews: some View {

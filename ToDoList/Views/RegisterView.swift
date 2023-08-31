@@ -31,7 +31,7 @@ struct RegisterView: View {
 					.textFieldStyle(DefaultTextFieldStyle())
 					.autocapitalization(.none)
 				
-				TLButtonView(title: "Create Action", background: Color.green, action: {
+				TLButtonView(title: "Create Account", background: Color.green, action: {
 					viewModel.register()
 				})
 				.padding()
