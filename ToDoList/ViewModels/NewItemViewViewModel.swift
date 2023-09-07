@@ -22,6 +22,8 @@ class NewItemViewViewModel: ObservableObject {
 	}
 	
 	func save(){
+		
+		// check if new item is savable
 		guard canSave() else{
 			return
 		}
@@ -51,6 +53,7 @@ class NewItemViewViewModel: ObservableObject {
 	}
 	
 	func canSave() -> Bool{
+		// validates that the title is not empty
 		guard !title.trimmingCharacters(in: .whitespaces).isEmpty else{
 			return false
 		}

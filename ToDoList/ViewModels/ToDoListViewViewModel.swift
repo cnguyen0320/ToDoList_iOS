@@ -14,6 +14,7 @@ class ToDoListViewViewModel: ObservableObject {
 	@Published var showingNewItemView: Bool = false
 	private let userId: String
 	
+	// initialize userId when created
 	init(userId:String){
 		self.userId = userId
 	}
@@ -24,6 +25,7 @@ class ToDoListViewViewModel: ObservableObject {
 	func delete(itemId: String){
 		let db = Firestore.firestore()
 		
+		// deletes an item from the list
 		db.collection("users")
 			.document(self.userId)
 			.collection("todos")

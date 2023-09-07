@@ -22,6 +22,7 @@ struct MainView: View {
 	
 	@ViewBuilder
 	var accountView: some View {
+		// creates tabs that navigate between todo list and profiel view
 		TabView{
 			ToDoListView(userId: viewModel.currentUserId)
 			.tabItem{

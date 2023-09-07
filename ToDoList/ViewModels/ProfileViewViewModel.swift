@@ -19,21 +19,22 @@ class ProfileViewViewModel: ObservableObject {
 	
 	func fetchUser(){
 		
-		// if user exists,
+		// if user already exists then return - no need to do anything
 		guard let userId = Auth.auth().currentUser?.uid else {
 			return
 		}
-		
+		// get the user from the
 		let db = Firestore.firestore()
 		db.collection("users")
 			.document(userId)
 			.getDocument{ [weak self]
 				snapshot, error in
-				guard let data = snapshot?.data(), error == nil else{
+				guard let data = snapshot?.data(), error == nil else{ // if user returns error then return early
 					return
 				}
 				
 				
+				// generate User object
 				DispatchQueue.main.async{
 					self?.user = User(
 						id: data["id"] as? String ?? "",
@@ -46,7 +47,9 @@ class ProfileViewViewModel: ObservableObject {
 		
 	}
 	
+	// log off user
 	func logoff(){
+		
 		do{
 			try Auth.auth().signOut()
 			

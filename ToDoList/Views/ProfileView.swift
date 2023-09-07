@@ -56,10 +56,12 @@ struct ProfileView: View {
 				}
 				.navigationTitle("Profile")
 			}else{
+				// displays this while waiting for user data to populate
 				Text("Loading user...")
 			}
 		}
 		.onAppear{
+			// user data is fetched when this view appears
 			viewModel.fetchUser()
 		}
     }

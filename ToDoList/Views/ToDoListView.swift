@@ -23,9 +23,10 @@ struct ToDoListView: View {
     var body: some View {
 		NavigationView{
 			VStack{
+				// to do list item
 				List(items){ item in
 					ToDoListItemView(item: item)
-						.swipeActions{
+						.swipeActions{ // adds a swipe action to create a delete button
 							Button{
 								viewModel.delete(itemId: item.id)
 							} label:{
@@ -40,12 +41,13 @@ struct ToDoListView: View {
 			.navigationTitle("To Do List")
 			.toolbar{
 				Button{
+					// on press, set the boolean to display the sheet for new item
 					viewModel.showingNewItemView = true
 				} label: {
 					Image(systemName: "plus")
 				}
 			}
-			.sheet(isPresented: $viewModel.showingNewItemView){
+			.sheet(isPresented: $viewModel.showingNewItemView){ // provides the sheet for new item
 				NewItemView(newItemPresented: $viewModel.showingNewItemView)
 			}
 		}

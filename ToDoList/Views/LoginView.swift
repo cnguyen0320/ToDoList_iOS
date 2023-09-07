@@ -18,6 +18,7 @@ struct LoginView: View {
 				
 				HeaderView(title: "To Do List", subtitle: "Get it done!", angle: 15.0, background: Color.pink)
 				
+				// displays the error message if one exists
 				if !viewModel.errorMessage.isEmpty {
 					Text(viewModel.errorMessage)
 						.foregroundColor(Color.red)

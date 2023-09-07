@@ -14,6 +14,7 @@ class MainViewViewModel: ObservableObject{
 	private var handler: AuthStateDidChangeListenerHandle?
 	
 	init(){
+		// watch for the user to change
 		let handler = Auth.auth().addStateDidChangeListener {[weak self] _, user in
 			DispatchQueue.main.async{
 				self?.currentUserId = user?.uid ?? ""
@@ -21,6 +22,7 @@ class MainViewViewModel: ObservableObject{
 		}
 	}
 	
+	// returns True if a user is signed in
 	public var isSignedIn: Bool {
 		return Auth.auth().currentUser != nil
 	}
